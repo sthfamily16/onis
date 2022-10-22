@@ -1,0 +1,6 @@
+/onis_cli/logs/*
+/onis_cli/output/*
+/onis_cli/files/*
+
+/onis_site/config.conf
+/onis_site/app/tmp/*
