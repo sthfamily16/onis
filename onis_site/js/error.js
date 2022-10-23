@@ -14,7 +14,7 @@ function fn_showError(strMsg)
 	$str = '<div id="'+ intId +'" class="toast" role="alert" aria-live="assertive" aria-atomic="true">'+
 		'<div class="toast-header">'+
 			'<img src="" class="rounded me-2" alt="">'+
-			'<strong class="me-auto">Bootstrap</strong>'+
+			'<strong class="me-auto">Error</strong>'+
 			'<small class="text-muted">just now</small>'+
 			'<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>'+
 		'</div>'+
@@ -23,5 +23,7 @@ function fn_showError(strMsg)
 
 	$('.toast-container').append($str);
 
-	new bootstrap.Toast($('#'+intId));
+	var objToast = new bootstrap.Toast($('#'+intId));
+
+	objToast.show();
 }
